@@ -1,17 +1,15 @@
 var inc = 0.1;
 var scl = 10;
 var cols, rows;
-
 var zoff = 0;
-
 var fr;
-
 var particles = [];
-
 var flowfield;
 
+
+
 function setup() {
-  createCanvas(600, 400);
+  createCanvas(windowWidth, windowHeight);
   cols = floor(width / scl);
   rows = floor(height / scl);
   fr = createP('');
@@ -22,6 +20,11 @@ function setup() {
     particles[i] = new Particle();
   }
   background(51);
+}
+
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
@@ -53,6 +56,7 @@ function draw() {
     particles[i].update();
     particles[i].edges();
     particles[i].show();
+    window.addEventListener('resize', windowResized);
   }
 
   // fr.html(floor(frameRate()));
