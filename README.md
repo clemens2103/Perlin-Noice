@@ -1,5 +1,7 @@
 # Perlin Noise Visualization
 
+![Perlin Noise Visualization Screenshot](assets/screenshot.png)
+
 ## Introduction
 This project is a web-based visualization of Perlin noise, inspired by the techniques demonstrated in [this video](https://www.youtube.com/watch?v=BjoM9oKOAKY). Perlin noise is a type of gradient noise often used in computer graphics and procedural generation. Our implementation enhances the visualization by introducing a fullscreen mode and making it fully responsive to accommodate various devices and screen sizes.
 

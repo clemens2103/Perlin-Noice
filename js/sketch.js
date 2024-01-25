@@ -35,14 +35,13 @@ function windowResized() {
 }
 
 
-function drawText() {
-  console.log('test')
-  textAlign(CENTER, CENTER); // Textausrichtung auf Mitte setzen
-  textSize(300); // Schriftgröße festlegen
-  fill('#1e2526'); // Textfarbe festlegen (hier weiß)
-  noStroke(); // Keine Umrandung für den Text
-  text('CS', width / 2, height / 2); // Text in der Mitte des Bildschirms zeichnen
-}
+// function drawText() {
+//   textAlign(CENTER, CENTER); // Textausrichtung auf Mitte setzen
+//   textSize(300); // Schriftgröße festlegen
+//   fill('#1e2526'); // Textfarbe festlegen (hier weiß)
+//   noStroke(); // Keine Umrandung für den Text
+//   text('CS', width / 2, height / 2); // Text in der Mitte des Bildschirms zeichnen
+// }
 
 function draw() {
   if (millis() - startTime < maxTime) { // check if max time is reached
@@ -72,7 +71,6 @@ function draw() {
 
 
   image(buffer, 0, 0); // Draw the buffer on the main canvas
-  drawText();
   
   }
 }
